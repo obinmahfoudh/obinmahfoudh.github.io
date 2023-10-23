@@ -1,40 +1,37 @@
 import {Courses} from "../ClassList"
-
+import {Tooltip} from 'flowbite-react'
 export const Classes = () => {
+  document.title = 'Obaid | Classes'
+  
   return (
-    <>
-    {document.title = 'Classes'}
-      <div class = "text-white p-40 gap-40 flex flex-col justify-center">
-        <div class= 'flex '>
-          <h1 class='text-4xl  font-extrabold'>Computer Science and Engineering</h1>
-          {getCourses("Computer Science and Engineering")}
+      <div className= 'flex py-28 px-10 justify-between'>
+        <div className="flex flex-col text-4xl gap-32 text-white font-extrabold">
+          <h3>Computer Science and Engineering</h3>
+          <h3>Math</h3>
+          <h3>Sciences</h3>
         </div>
-        <div class= 'flex justify-between'>
-          <h1 class='text-4xl flex j font-extrabold'>Math</h1>
-          <div class='place-self-center px-80'>
-            {getCourses("Math")}
-          </div>
-        </div>
-        <div class= 'flex justify-between'>
-          <h1 class='text-4xl font-extrabold'>Sciences</h1>
-          <div class='place-self-center px-80' >
-            {getCourses("Sciences")}
-          </div>
+        <div className="flex flex-col gap-32">
+          {GetCourses('Computer Science and Engineering')}
+          {GetCourses('Math')}
+          {GetCourses('Sciences')}
         </div>
       </div>
-    </>
   );
 }
 export default Classes;
 
-function getCourses(courseType){
+function GetCourses(courseType){
+
+
   const computerCourses= Courses.filter(Courses => Courses.Type === courseType);
   const listItems = computerCourses.map(Courses =>
-    <li>
-      <p class = 'transition ease-in-out delay-150  hover:scale-125  duration-700'>
-        <b class= 'text-white bg-sky-500 rounded-md p-1 hover:bg-red-300 hover:underline'>   {Courses.Name} </b>
+    <li className=''>
+      <Tooltip content= {<p className='font-semibold'>{Courses.Description}</p>} arrow={false} placement='bottom' className='max-w-prose'>
+      <p class = 'transition ease-in-out delay-150  hover:scale-125  duration-700 flex flex-wrap'>
+        <b class= 'text-white bg-sky-500 rounded-md p-1 hover:bg-slate-600'>   {Courses.Name} </b>
       </p>
+      </Tooltip>
     </li>
     )
-  return <ul class='flex flex-wrap justify-center gap-6'>{listItems}</ul>
+  return <ul class='flex flex-wrap justify-center gap-4'>{listItems}</ul>
 }

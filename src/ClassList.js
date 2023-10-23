@@ -5,7 +5,7 @@ export const Courses = [
   
         Name: "Machine Learning",
   
-        Description: "Ddi Machine Learning",
+        Description: "Introduce fundamental problems in machine learning. Provide understanding of techniques, mathematical concepts, and algorithms used in machine learning. Provide understanding of the limitations of various machine learning algorithms and the way to evaluate performance of learning algorithms. Topics include introduction, regression, kernel methods, generative learning, discriminative learning, neural networks, support vector machines, graphical models, unsupervised learning, and dimensionality reduction.",
 
         Type: "Computer Science and Engineering"
     },
@@ -15,7 +15,11 @@ export const Courses = [
   
         Name: "Introduction to Artificial Intelligence",
     
-        Description: "Did databases",
+        Description: "Introduction to computational methods for intelligent control of autonomous agents, " +
+                     "and the use of programming paradigms that support development of flexible and reactive " +
+                     "systems. These include heuristic search, knowledge representation, constraint satisfaction, " +
+                     "probabilistic reasoning, decision-theoretic control, and sensor interpretation. Particular " +
+                     "focus will be places on real-world application of the material.",
 
         Type: "Computer Science and Engineering"
       },
@@ -25,7 +29,7 @@ export const Courses = [
   
         Name: "Database Organization",
     
-        Description: "Did databases",
+        Description: "Did",
 
         Type: "Computer Science and Engineering"
       },

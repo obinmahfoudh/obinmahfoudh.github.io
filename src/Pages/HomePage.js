@@ -1,5 +1,6 @@
 
 const HomePage = () => {
+  document.title = 'Obaid'
   return (
     <div className="HomePage">
       <header className="HomePage">
