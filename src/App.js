@@ -7,16 +7,15 @@ import NavBar from "./Components/NavBar.js";
 
 
 function App() {
-  return (
-    <body className="min-h-screen bg-gradient-to-b from-slate-800 to-slate-900">
-      <NavBar>
+  return ( 
+    <body className="min-h-screen bg-gradient-to-b from-slate-800 to-slate-900 w-full overflow-hidden">
+      <NavBar class=''></NavBar>
         <Routes>
           <Route path = '/'  element={<HomePage/>} />
           <Route path = '/Classes'  element={<Classes/>} />
           <Route path = '/WorkExperiences'  element={<WorkExperiences/>} />
           <Route path = '/ContactMe'  element={<ContactMe/>} />
         </Routes>
-      </NavBar>
       </body>
   );
 }
