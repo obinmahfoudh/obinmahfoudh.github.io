@@ -8,7 +8,7 @@ import NavBar from "./Components/NavBar.js";
 
 function App() {
   return ( 
-    <body className="bg-gradient-to-r from-slate-900 to-slate-700 ">
+    <body className="bg-rose-200">
       <NavBar></NavBar>
         <Routes>
           <Route path = '/'  element={<HomePage/>} />

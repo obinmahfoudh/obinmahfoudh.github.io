@@ -7,12 +7,12 @@ export const HomePage = () => {
   document.title = 'Obaid'
   return (
     <>
-        <div className=''>
-          <h2 className='flex justify-center align-middle pt-40 font-extrabold text-white text-6xl'>Hello there</h2>
-          <p className='flex justify-center align-middle pt-10 font-extrabold text-white text-4xl'>I'm Obaid, a student at the Illinois Institute of Technology</p>
-          <p className='flex justify-center align-middle pt-10 font-extrabold text-white text-4xl'>studying Artificial Intelligence with a minor in Computational Mathematics</p>
-          <p className='flex justify-center align-middle font-extrabold text-white text-2xl'>This is my resume website where you can see what classes I've taken, my work exerpeiences and a bit more about me</p>
-          <div class='flex justify-center pt-10 pb-20'>
+        <div className='text-white'>
+          <h2 className='flex justify-center align-middle pt-40 font-extrabold text-6xl'>Hello there</h2>
+          <p className='flex justify-center align-middle pt-10 font-extrabold text-4xl'>I'm Obaid, a student at the Illinois Institute of Technology</p>
+          <p className='flex justify-center align-middle pt-10 font-extrabold text-4xl'>studying Artificial Intelligence with a minor in Computational Mathematics</p>
+          <p className='flex justify-center align-middle pt-10 font-extrabold text-2xl'>This is my resume website where you can see what classes I've taken, my work exerpeiences and a bit more about me</p>
+          <div class='flex px-20 pt-20'>
             <div className= "">
               {ReviewRatings()}
             </div>
@@ -28,15 +28,15 @@ export default HomePage;
 
 const ReviewRatings = () => {
   return(
-    <div className="flex flex-col text-xl px-40">
+    <div className="text-xl">
         <div>
           <Rating>
             <Rating.Star/>
             <p className='font-bold text-gray-500 text-2xl'> 4.95 </p>
             </Rating>
         </div>
-      <div className= "h-40">
-        <Carousel indicators={false} leftControl=" " rightControl=" ">
+      <div className= "flex h-40 w-96">
+        <Carousel indicators={false} pauseOnHover>
           {getReviews()}
         </Carousel>
       </div>
@@ -46,13 +46,15 @@ const ReviewRatings = () => {
 
 function getReviews(){
   const reviewCards = Reviews.map(Reviews =>
-    <Card className= "bg-sky-950">
-      <div className='flex justify-between align-center bg-inherit'>
-        <div>
-          <h5 className="text-2xl font-bold  text-slate-300 ">
-          {Reviews.Review}
+    <Card className= "bg-slate-900 h-40">
+      <div className='flex justify-between h-40'>
+        <div className= 'flex flex-col justify-between'>
+          <h5 className="text-2xl font-bold text-slate-300 ">
+          Friend {Reviews.id}
           </h5>
-          <p>{Reviews.Review}</p>
+          <p className= 'font-bold'>
+            {Reviews.Review}
+          </p>
         </div>
         <div>
           <Rating>

@@ -1,15 +1,22 @@
 export const Reviews = [
     {
-        id: 0,
+        id: "A",
 
         Review: "Great guy"
         
     },
 
     {
-        id: 1,
+        id: "B",
 
         Review: "Wow, thats all I can say"
+        
+    },
+
+    {
+        id: "C",
+
+        Review: "Definitely hire this guy"
         
     }
 ]
