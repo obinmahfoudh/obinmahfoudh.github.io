@@ -1,5 +1,6 @@
 import {Courses} from "../ClassList"
 import {Tooltip} from 'flowbite-react'
+
 export const Classes = () => {
   document.title = 'Obaid | Classes'
   
@@ -21,8 +22,6 @@ export const Classes = () => {
 export default Classes;
 
 function GetCourses(courseType){
-
-
   const computerCourses= Courses.filter(Courses => Courses.Type === courseType);
   const listItems = computerCourses.map(Courses =>
     <li className=''>
