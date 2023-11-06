@@ -16,7 +16,7 @@ export const Reviews = [
     {
         id: "C",
 
-        Review: "Definitely hire this guy"
+        Review: "Definitely hire this guy!"
         
     }
 ]
