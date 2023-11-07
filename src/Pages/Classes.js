@@ -1,5 +1,6 @@
-import {Courses} from "../ClassList"
+import {Courses} from "../Data/ClassList"
 import {Tooltip} from 'flowbite-react'
+
 export const Classes = () => {
   document.title = 'Obaid | Classes'
   
@@ -21,10 +22,8 @@ export const Classes = () => {
 export default Classes;
 
 function GetCourses(courseType){
-
-
-  const computerCourses= Courses.filter(Courses => Courses.Type === courseType);
-  const listItems = computerCourses.map(Courses =>
+  const typeCourses= Courses.filter(Courses => Courses.Type === courseType);
+  const listItems = typeCourses.map(Courses =>
     <li className=''>
       <Tooltip content= {<p className='font-semibold'>{Courses.Description}</p>} arrow={false} placement='bottom' className='max-w-prose'>
       <p class = 'transition ease-in-out delay-150  hover:scale-125  duration-700 flex flex-wrap'>
