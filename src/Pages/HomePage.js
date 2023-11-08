@@ -8,11 +8,12 @@ export const HomePage = () => {
   return (
     <>
         <div className='text-white'>
-          <h2 className='flex justify-center align-middle pt-40 font-extrabold text-6xl'>print("Hello world")</h2>
-          <p className='flex justify-center align-middle pt-10 font-extrabold text-4xl'>I'm Obaid, a student at the <pre className='text-rose-500'> Illinois Institute of Technology</pre> </p>
-          <p className='flex justify-center align-middle pt-10 font-extrabold text-4xl'>studying <pre className='text-rose-500'> Artificial Intelligence </pre> with a minor in Computational Mathematics</p>
-          <p className='flex justify-center align-middle pt-10 font-extrabold text-2xl'>This is my resume website where you can see what classes I've taken, my work experiences and a bit more about me</p>
+          <h2 className='flex justify-center align-middle mt-40 font-extrabold text-6xl'>print("Hello world")</h2>
+          <p className='flex justify-center align-middle mt-10 font-extrabold text-4xl'>I'm Obaid, a student at the <pre className='text-rose-500'> Illinois Institute of Technology</pre> </p>
+          <p className='flex justify-center align-middle mt-10 font-extrabold text-4xl'>studying <pre className='text-rose-500'> Artificial Intelligence </pre> with a minor in Computational Mathematics</p>
+          <p className='flex justify-center align-middle mt-10 font-extrabold text-2xl'>This is my resume website where you can see what classes I've taken, my work experiences and a bit more about me</p>
         </div>
+
         <div className= 'flex justify-between content-center pt-40 px-10 text-xl text-white '>
           <p className='py-5'>Check out the code here: 
             <a className= 'text-sky-500' href="https://github.com/obinmahfoudh/obinmahfoudh.github.io"> https://github.com/obinmahfoudh/obinmahfoudh.github.io</a>
