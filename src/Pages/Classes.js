@@ -26,7 +26,7 @@ function GetCourses(courseType){
   const listItems = typeCourses.map(Courses =>
     <li className=''>
       <Tooltip content= {<p className='font-semibold'>{Courses.Description}</p>} arrow={false} placement='bottom' className='max-w-prose'>
-      <p class = 'transition ease-in-out delay-150  hover:scale-125  duration-700 flex flex-wrap'>
+      <p class = 'transition ease-in-out delay-150  hover:scale-125  duration-700 flex'>
         <b class= 'text-white bg-sky-500 rounded-md p-1 hover:bg-slate-600'>   {Courses.Name} </b>
       </p>
       </Tooltip>
