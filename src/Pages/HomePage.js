@@ -8,12 +8,12 @@ export const HomePage = () => {
   return (
     <>
         <div className='text-white'>
-          <h2 className='flex justify-center align-middle pt-40 font-extrabold text-6xl'>print("Hello world")</h2>
-          <p className='flex justify-center align-middle pt-10 font-extrabold text-4xl'>I'm Obaid, a student at the <pre className='text-rose-500'> Illinois Institute of Technology</pre> </p>
-          <p className='flex justify-center align-middle pt-10 font-extrabold text-4xl'>studying <pre className='text-rose-500'> Artificial Intelligence </pre> with a minor in Computational Mathematics</p>
-          <p className='flex justify-center align-middle pt-10 font-extrabold text-2xl'>This is my resume website where you can see what classes I've taken, my work experiences and a bit more about me</p>
+          <h2 className='flex justify-center align-middle mt-40 font-extrabold text-6xl'>print("Hello world")</h2>
+          <p className='flex justify-center align-middle mt-10 font-extrabold text-4xl'>I'm Obaid, a student at the <pre className='text-rose-500'> Illinois Institute of Technology</pre> </p>
+          <p className='flex justify-center align-middle mt-10 font-extrabold text-4xl'>studying <pre className='text-rose-500'> Artificial Intelligence </pre> with a minor in Computational Mathematics</p>
+          <p className='flex justify-center align-middle mt-10 font-extrabold text-2xl'>This is my resume website where you can see what classes I've taken, my work experiences and a bit more about me</p>
         </div>
-        <div className= 'flex justify-end pt-40 '>
+        <div className= 'flex justify-end mt-40 '>
           {ReviewRatings()}
         </div>
         <div></div>

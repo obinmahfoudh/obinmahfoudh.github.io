@@ -22,10 +22,10 @@ function ContactMe(){
   };
 
   return (
-    <div>
-      <h2 className='text-2xl text-white font-extrabold pt-40 px-60'>Send me an Email:</h2>
-      <div className='flex justify-center'>
-        <form ref={form} onSubmit={sendEmail} className='flex flex-col w-9/12 text-white font-bold gap-2 pt-4'>
+    <div className='flex flex-col pt-20 w-11/12 m-auto'>
+      <h2 className='text-2xl text-white font-extrabold'>Send me an Email:</h2>
+      <div>
+        <form ref={form} onSubmit={sendEmail} className='flex flex-col text-white font-bold gap-2 pt-4'>
           <label>Name</label>
           <input type="text" required name="from_name" minlength='2' className='bg-inherit' />
           <label>Email</label>
@@ -33,11 +33,11 @@ function ContactMe(){
           <label>Message</label>
           <textarea name="message" required minlength='5' className='resize-none bg-inherit h-40'/>
           <div className='flex justify-center'>
-            <input type="submit" value="Send" className='bg-sky-500 rounded-full w-2/12 '/>
+            <input type="submit" value="Send" className='bg-sky-500 rounded-full w-3/12 hover:bg-slate-500'/>
           </div>
         </form>
       </div>
-      <div className='flex flex-col pt-20 pl-60 gap-2 text-white font-bold'>
+      <div className='flex flex-col pt-20 gap-2 text-white font-bold'>
         <h3 className='text-2xl font-extrabold'>You can also reach me directly at: </h3>
         <div className='flex content-center pt-4'>
           <a href='mailto:binmahfoudhobaid@gmail.com'><img src={email_logo} alt='logo representing an email' title='open email app' className='w-16'/></a>
