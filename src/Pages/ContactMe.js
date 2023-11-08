@@ -21,7 +21,10 @@ function ContactMe(){
     alert("Your email has been sent");
   };
 
+  document.title = 'Obaid | Contact Me'
+
   return (
+
     <div className='flex flex-col pt-20 w-11/12 m-auto'>
       <h2 className='text-2xl text-white font-extrabold'>Send me an Email:</h2>
       <div>

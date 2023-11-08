@@ -3,17 +3,19 @@ import {Link} from "react-router-dom";
 
 export default function NavBar() {
   return (
-  <nav class='flex h-12 px-5 items-end font-semibold justify-center space-x-10'>
-    <Link to="/" class='text-xl bold text-white'>Home</Link>
-    <ul class='text-xl list-none flex space-x-10 justify-center'>
-      <li class='transition ease-in-out delay-150  hover:scale-125 duration-700'>
-        <Link to="/WorkExperiences" class='text-white'>Work Experiences</Link>
+  <nav className='flex justify-center items-end pt-5 font-semibold '>
+    <ul className='flex justify-center text-xl text-white list-none space-x-10'>
+      <li className= 'hover:text-sky-500 duration-500'>
+        <Link to="/">Home</Link>
       </li>
-      <li class='transition ease-in-out delay-150  hover:scale-125 duration-700'>
-        <Link to="/Classes" class='text-white'>Classes</Link>
+      <li className='hover:text-sky-500 duration-500'>
+        <Link to="/Experiences">Experiences</Link>
       </li>
-      <li class='transition ease-in-out delay-150  hover:scale-125 duration-700'>
-        <Link to="/ContactMe" class='text-white'>Contact Me</Link>
+      <li className='hover:text-sky-500 duration-500'>
+        <Link to="/Classes">Classes</Link>
+      </li>
+      <li className='hover:text-sky-500 duration-500'>
+        <Link to="/ContactMe">Contact Me</Link>
       </li>
     </ul>
   </nav>

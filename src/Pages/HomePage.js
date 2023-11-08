@@ -1,6 +1,6 @@
 
 import { Carousel, Card, Rating } from 'flowbite-react';
-import { Reviews } from './Reviews';
+import { Reviews } from '../Data/Reviews';
 
 
 export const HomePage = () => {
@@ -13,7 +13,11 @@ export const HomePage = () => {
           <p className='flex justify-center align-middle mt-10 font-extrabold text-4xl'>studying <pre className='text-rose-500'> Artificial Intelligence </pre> with a minor in Computational Mathematics</p>
           <p className='flex justify-center align-middle mt-10 font-extrabold text-2xl'>This is my resume website where you can see what classes I've taken, my work experiences and a bit more about me</p>
         </div>
-        <div className= 'flex justify-end mt-40 '>
+
+        <div className= 'flex justify-between content-center pt-40 px-10 text-xl text-white '>
+          <p className='py-5'>Check out the code here: 
+            <a className= 'text-sky-500' href="https://github.com/obinmahfoudh/obinmahfoudh.github.io"> https://github.com/obinmahfoudh/obinmahfoudh.github.io</a>
+          </p>
           {ReviewRatings()}
         </div>
         <div></div>
@@ -25,8 +29,8 @@ export default HomePage;
 
 const ReviewRatings = () => {
   return(
-    <div className="text-xl flex space-x-20">
-      <p className= 'text-2xl text-white font-bold py-5'>See what people have to say:</p>
+    <div className="flex space-x-20">
+      <p className= 'text-2xl font-bold py-5'>See what people have to say:</p>
       <div className= "h-40 w-96">
         <Carousel indicators={false} leftControl=" " rightControl=" " pauseOnHover>
           {getReviews()}
