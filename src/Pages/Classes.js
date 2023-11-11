@@ -5,7 +5,7 @@ export const Classes = () => {
   document.title = 'Obaid | Classes'
   
   return (
-      <div className= 'flex py-28 px-10 justify-between'>
+      <div className= 'flex py-28 px-10 justify-between m-auto'>
         <div className="flex flex-col text-4xl gap-32 text-white font-extrabold">
           <h3>Computer Science and Engineering</h3>
           <h3>Math</h3>

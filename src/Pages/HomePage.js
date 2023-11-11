@@ -15,7 +15,7 @@ export const HomePage = () => {
         </div>
 
         <div className= 'flex justify-between content-center pt-40 px-10 text-xl text-white '>
-          <p className='py-5'>Check out the code here: 
+          <p className='pt-5'>Check out the code here: 
             <a className= 'text-sky-500' href="https://github.com/obinmahfoudh/obinmahfoudh.github.io"> https://github.com/obinmahfoudh/obinmahfoudh.github.io</a>
           </p>
           {ReviewRatings()}
