@@ -14,8 +14,8 @@ export const HomePage = () => {
           <p className='flex justify-center align-middle mt-10 font-extrabold text-2xl'>This is my resume website where you can see what classes I've taken, my work experiences and a bit more about me</p>
         </div>
 
-        <div className= 'flex justify-between content-center pt-40 px-10 text-xl text-white '>
-          <p className='pt-5'>Check out the code here: 
+        <div className= 'flex space-x-20 mt-60 text-xl text-white '>
+          <p className='pt-5 flex flex-col'>Check out the code here: 
             <a className= 'text-sky-500' href="https://github.com/obinmahfoudh/obinmahfoudh.github.io"> https://github.com/obinmahfoudh/obinmahfoudh.github.io</a>
           </p>
           {ReviewRatings()}
