@@ -18,16 +18,19 @@ export const Experiences = () => {
   
   export default Experiences;
   
-  const getWork = () => {
+const getWork = () => {
     const listWork = WorkExperiences.map(work =>
-      <div className="py-8">
-        <div className="flex justify-between">
-          <h3 className="text-3xl text-slate-400">{work.jobTitle} | {work.Location}</h3>
-          <h3 className="">{work.When}</h3>
+      <div className="py-4 md:py-8">
+        <div className="flex flex-row justify-between">
+          <div className="flex flex-col justify-between">
+            <h3 className="text-xl md:text-3xl font-bold text-sky-500">{work.jobTitle}</h3>
+            <h3 className="text-lg md:text-2xl font-bold text-slate-300">{work.Company}</h3>
+            <h3 className="text-base md:text-xl font-medium text-slate-400">{work.Location}</h3>          
+          </div>
+          <p className="text-sm mt-1 md:text-xl font-medium text-white md:mt-0">{work.When}</p>
         </div>
-        <p className="text-2xl text-slate-400">{work.Company}</p>
-        <p className="px-4 w-6/12 ">{work.Bullets.map(bullet =>
-          <li>{bullet}</li>)}
+        <p className="px-4 pt-2 w-full md:w-6/12 font-normal text-white">{work.Bullets.map(bullet =>
+          <li className="list-disc">{bullet}</li>)}
         </p>
       </div>
       )

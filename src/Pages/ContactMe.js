@@ -25,8 +25,8 @@ function ContactMe(){
 
   return (
 
-    <div className='flex flex-col pt-20 w-11/12 m-auto'>
-      <h2 className='text-2xl text-white font-extrabold'>Send me an Email:</h2>
+    <div className='flex flex-col pt-10 md:pt-20 w-11/12 m-auto'>
+      <h2 className='text-lg md:text-2xl text-white font-extrabold'>Send me an Email:</h2>
       <div>
         <form ref={form} onSubmit={sendEmail} className='flex flex-col text-white font-bold gap-2 pt-4'>
           <label>Name</label>
@@ -36,21 +36,21 @@ function ContactMe(){
           <label>Message</label>
           <textarea name="message" required minlength='5' className='resize-none bg-inherit h-40'/>
           <div className='flex justify-center'>
-            <input type="submit" value="Send" className='bg-sky-500 rounded-full w-3/12 hover:bg-slate-500'/>
+            <input type="submit" value="Send" className='bg-sky-500 rounded-full w-6/12 md:w-3/12 hover:bg-slate-500'/>
           </div>
         </form>
       </div>
-      <div className='flex flex-col pt-20 gap-2 text-white font-bold'>
-        <h3 className='text-2xl font-extrabold'>You can also reach me directly at: </h3>
+      <div className='flex flex-col pt-10 md:pt-20 gap-2 text-white font-bold'>
+        <h3 className='text-lg md:text-2xl font-extrabold'>You can also reach me directly at: </h3>
         <div className='flex content-center pt-4'>
-          <a href='mailto:binmahfoudhobaid@gmail.com'><img src={email_logo} alt='logo representing an email' title='open email app' className='w-16'/></a>
+          <a href='mailto:binmahfoudhobaid@gmail.com'><img src={email_logo} alt='logo representing an email' title='open email app' className='w-10 md:w-16'/></a>
           <p className='self-center pr-4'>: binmahfoudhobaid@gmail.com</p>
-          <button onClick={() => navigator.clipboard.writeText("binmahfoudhobaid@gmail.com")}><img src={clipboard_logo} alt='logo representing a clipboard' title='copy text to clipboard' className='w-8'/></button>
+          <button onClick={() => navigator.clipboard.writeText("binmahfoudhobaid@gmail.com")}><img src={clipboard_logo} alt='logo representing a clipboard' title='copy text to clipboard' className='pl-4 md:pl-0 w-10 md:w-8'/></button>
         </div>
-        <div className='flex'>
-          <a href='https://www.linkedin.com/in/obaid-bin-mahfoudh/' target='_blank' rel='noreferrer'><img src={linkedin_logo} alt='logo representing the website linkedin' title='redirect to linkedin site' className='w-16'/></a>
-          <p className='self-center pr-4'>: https://www.linkedin.com/in/obaid-bin-mahfoudh/</p>
-          <button onClick={() => navigator.clipboard.writeText("https://www.linkedin.com/in/obaid-bin-mahfoudh/")}><img src={clipboard_logo} alt='logo representing a clipboard' title='copy text to clipboard' className='w-8'/></button>
+        <div className='flex content-between pt-4'>
+          <a href='https://www.linkedin.com/in/obaid-bin-mahfoudh/' target='_blank' rel='noreferrer'><img src={linkedin_logo} alt='logo representing the website linkedin' title='redirect to linkedin site' className='w-14 md:w-16'/></a>
+          <p className='self-center '>: https://www.linkedin.com/in/obaid-bin-mahfoudh/</p>
+          <button onClick={() => navigator.clipboard.writeText("https://www.linkedin.com/in/obaid-bin-mahfoudh/")}><img src={clipboard_logo} alt='logo representing a clipboard' title='copy text to clipboard' className='w-8 md:w-8'/></button>
         </div>
       </div>
     </div>

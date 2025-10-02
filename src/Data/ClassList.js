@@ -27,18 +27,6 @@ export const Courses = [
     {
         id: 1,
   
-        Name: "Discrete Mathematics",
-    
-        Description: `Introduction to mathematical analysis of finite collections and mathematical foundations of sequential machines,
-                      digital logic circuits, data structures, and algorithms. Includes sets, counting, recursion, graph theory, nets,
-                      automata, and formal grammars and languages`,
-
-        Type: "Computer Science and Engineering"
-      },
-
-      {
-        id: 2,
-  
         Name: "C++ Object Oriented Programming",
     
         Description: `Fundamentals of structured object-oriented C++ programming through a study of program specification and design,
@@ -49,7 +37,7 @@ export const Courses = [
       },
 
       {
-        id: 3,
+        id: 2,
   
         Name: "Data Structures and Algorithms",
     
@@ -61,7 +49,7 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 4,
+        id: 3,
   
         Name: "Introduction to Engineering Design",
     
@@ -72,7 +60,7 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 5,
+        id: 4,
   
         Name: "Experimental Engineering",
     
@@ -84,7 +72,7 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 6,
+        id: 5,
   
         Name: "Electronic Circuits and Devices",
     
@@ -95,7 +83,7 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 7,
+        id: 6,
   
         Name: "Engineering Systems 1",
     
@@ -107,7 +95,7 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 8,
+        id: 7,
   
         Name: "Design and Analysis of Computer Algorithms",
     
@@ -121,18 +109,52 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 9,
-  
-        Name: "Database Organization",
-    
-        Description: `Overview of database architectures, including the Relational, Hierarchical, Network, and Object Models.
-                      Database interfaces, including the SQL query language. Database design using the Entity-Relationship Model.
-                      Issues such as security, integrity, and query optimization.`,
-
+        id: 8,
+        Name: `Programming Paradigms and Patterns`,
+        Description: `This class balances the imperative, object-oriented bent of the introductory programming 
+                      sequence by presenting alternative programming paradigms and asks students to write complex 
+                      programs from scratch while amassing a repertoire of reusable programming patterns and
+                      techniques. Programming assignments, drawn from various domains of computer science, will
+                      highlight the importance of selecting appropriate data structures, algorithms, and techniques
+                      for the problem at hand.`,
         Type: "Computer Science and Engineering"
       },
       {
+        id: 9,
+        Name: `Information Security`,
+        Description: `An introduction to the fundamentals of computer and information security.
+                      This course focuses on algorithms and techniques used to defend against malicious software.
+                      Topics include an introduction to encryption systems, operating system security, database
+                      security, network security, system threats, and risk avoidance procedures.`,
+        Type: "Computer Science and Engineering"
+
+      },
+      {
         id: 10,
+        Name: `Software Engineering`,
+        Description: `Study of the principles and practices of software engineering. Topics include
+                      software quality concepts, process models, software requirements analysis, design 
+                      methodologies, software testing and software maintenance. Hands-on experience building a
+                      software system using the waterfall life cycle model. Students work in teams to develop
+                      all life cycle deliverables: requirements document, specification and design documents,
+                      system code, test plan, and user manuals.`,
+          Type: "Computer Science and Engineering"
+
+      },
+      {
+        id: 11,
+        Name: `Data Mining`,
+        Description: `This course will provide an introductory look at concepts and techniques in the field of
+                      data mining. After covering the introduction and terminologies to Data Mining, the techniques
+                      used to explore the large quantities of data for the discovery of meaningful rules and knowledge
+                      such as market basket analysis, nearest neighbor, decision trees, and clustering are covered.
+                      The students learn the material by implementing different techniques throughout the semester.`,
+        Type: "Computer Science and Engineering"
+
+
+      },
+      {
+        id: 12,
   
         Name: "Introduction to Artificial Intelligence",
     
@@ -144,7 +166,7 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 11,
+        id: 13,
   
         Name: "Machine Learning",
     
@@ -157,7 +179,27 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 12,
+        id: 14,
+        Name: `Natural Language Processing`,
+        Description: `An introduction to the problems of computing with human languages. Parsing.
+                      Semantic representations. Text generation. Lexicography. Discourse. Sublanguage studies.
+                      Applications to CAI, database interfaces and information retrieval.`,
+        Type: "Computer Science and Engineering"
+
+      },
+      {
+        id: 15,
+  
+        Name: "Discrete Mathematics",
+    
+        Description: `Introduction to mathematical analysis of finite collections and mathematical foundations of sequential machines,
+                      digital logic circuits, data structures, and algorithms. Includes sets, counting, recursion, graph theory, nets,
+                      automata, and formal grammars and languages`,
+
+        Type: "Math"
+      },
+      {
+        id: 16,
   
         Name: "Calculus 2",
     
@@ -168,7 +210,7 @@ export const Courses = [
         Type: "Math"
       },
       {
-        id: 13,
+        id: 17,
   
         Name: "Calculus 3",
     
@@ -178,7 +220,7 @@ export const Courses = [
         Type: "Math"
       },
       {
-        id: 14,
+        id: 18,
   
         Name: "Linear Algebra",
     
@@ -190,7 +232,7 @@ export const Courses = [
         Type: "Math"
       },
       {
-        id: 15,
+        id: 19,
   
         Name: "Ordinary Differential Equations",
     
@@ -202,7 +244,47 @@ export const Courses = [
         Type: "Math"
       },
       {
-        id: 16,
+        id: 20,
+        Name: `Regression`,
+        Description: `This course introduces the basic statistical regression model and design of experiments concepts.
+                      Topics include simple linear regression, multiple linear regression, least square estimates
+                      of parameters; hypothesis testing and confidence intervals in linear regression, testing of
+                      models, data analysis and appropriateness of models, generalized linear models, design and 
+                      analysis of single-factor experiments.`
+      },
+      {
+        id: 21,
+        Name: 'Introduction to Computational Mathematics',
+        Description: ` Study and design of mathematical models for the numerical solution of scientific problems.
+                       This includes numerical methods for the solution on linear and nonlinear systems, basic data
+                       fitting problems, and ordinary differential equations. Robustness, accuracy, and speed of
+                       convergence of algorithms will be investigated including the basics of computer arithmetic
+                       and round-off errors. Same as MMAE 350.`,
+        Type: 'Math'
+
+      },
+      {
+        id: 22,
+        Name: 'Numerical Linear Algebra',
+        Description: `Fundamentals of matrix theory; least squares problems; computer arithmetic, conditioning and 
+                      stability; direct and iterative methods for linear systems; nonlinear systems.`,
+        Type: 'Math'
+      },
+      {
+        id: 23,
+        Name: 'Mathematical Modeling',
+        Description: `The course provides a systematic approach to modeling applications from areas such as physics
+                      and chemistry, engineering, biology, and business (operations research). The mathematical models
+                      lead to discrete or continuous processes that may be deterministic or stochastic. 
+                      Dimensional analysis and scaling are introduced to prepare a model for study. 
+                      Analytic and computational tools from a broad range of applied mathematics will be used to 
+                      obtain information about the models. The mathematical results will be compared to physical data
+                      to assess the usefulness of the models. `,
+
+        Type: 'Math'
+      },
+      {
+        id: 24,
   
         Name: "Physics 1 w/lab",
     
@@ -212,7 +294,7 @@ export const Courses = [
         Type: "Sciences"
       },
       {
-        id: 17,
+        id: 25,
   
         Name: "Physics 2 w/lab",
     
@@ -221,7 +303,7 @@ export const Courses = [
         Type: "Sciences"
       },
       {
-        id: 18,
+        id: 26,
   
         Name: "Modern Physics",
     
@@ -231,7 +313,7 @@ export const Courses = [
         Type: "Sciences"
       },
       {
-        id: 19,
+        id: 27,
   
         Name: "Chemistry 1 w/lab",
     
@@ -241,7 +323,7 @@ export const Courses = [
         Type: "Sciences"
       },
       {
-        id: 20,
+        id: 28,
   
         Name: "Chemistry 2",
     
@@ -251,4 +333,3 @@ export const Courses = [
         Type: "Sciences"
       },
   ];
- 

@@ -3,20 +3,22 @@ import {Tooltip} from 'flowbite-react'
 
 export const Classes = () => {
   document.title = 'Obaid | Classes'
-  
+
   return (
-      <div className= 'flex py-28 px-10 justify-between'>
-        <div className="flex flex-col text-4xl gap-32 text-white font-extrabold">
-          <h3>Computer Science and Engineering</h3>
-          <h3>Math</h3>
-          <h3>Sciences</h3>
-        </div>
-        <div className="flex flex-col gap-32">
-          {GetCourses('Computer Science and Engineering')}
-          {GetCourses('Math')}
-          {GetCourses('Sciences')}
-        </div>
+    <div className= 'px-4 gap-10 items-center grid md:grid-rows-3 md:h-screen'>
+      <div className="grid gap-10 md:grid-cols-[1fr_3fr] ">
+        <h3 className="text-2xl md:text-4xl text-white font-extrabold">Computer Science and Engineering</h3>
+        {GetCourses('Computer Science and Engineering')}
       </div>
+      <div className="grid gap-10 md:grid-cols-[1fr_3fr] ">
+        <h3 className="text-2xl md:text-4xl text-white font-extrabold">Math</h3>
+        {GetCourses('Math')}
+      </div>
+      <div className="grid gap-10 md:grid-cols-[1fr_3fr]">
+        <h3 className="text-2xl md:text-4xl text-white font-extrabold">Sciences</h3>
+        {GetCourses('Sciences')}
+      </div>
+    </div>
   );
 }
 export default Classes;
