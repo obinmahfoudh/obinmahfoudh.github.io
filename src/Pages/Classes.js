@@ -5,7 +5,7 @@ export const Classes = () => {
   document.title = 'Obaid | Classes'
 
   return (
-    <div className= 'px-4 gap-10 items-center grid md:grid-rows-3 md:h-screen'>
+    <div className= 'px-4 py-10 gap-10 items-center grid md:grid-rows-3 md:h-screen'>
       <div className="grid gap-10 md:grid-cols-[1fr_3fr] ">
         <h3 className="text-2xl md:text-4xl text-white font-extrabold">Computer Science and Engineering</h3>
         {GetCourses('Computer Science and Engineering')}
