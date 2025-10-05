@@ -2,15 +2,12 @@ import { WorkExperiences } from "../Data/ExperienceList";
 
 export const Experiences = () => {
   document.title = 'Obaid | Experiences'
+
     return (
-      
       <div className="text-white font-bold pt-10 px-4">
         <div className="">
           <h2 className="text-white text-4xl font-extrabold">Work Experiences</h2>
           {getWork()}
-        </div>
-        <div>
-
         </div>
       </div>
     );

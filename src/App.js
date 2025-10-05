@@ -3,6 +3,7 @@ import Classes from './Pages/Classes';
 import HomePage from './Pages/HomePage';
 import ContactMe from './Pages/ContactMe.js';
 import Experiences from "./Pages/Experiences.js";
+import Projects from "./Pages/Projects.js";
 import NavBar from "./Components/NavBar.js";
 
 
@@ -14,6 +15,7 @@ function App() {
           <Route path = '/'  element={<HomePage/>} />
           <Route path = '/Classes'  element={<Classes/>} />
           <Route path = '/Experiences'  element={<Experiences/>} />
+          <Route path = '/Projects'  element={<Projects/>} />
           <Route path = '/ContactMe'  element={<ContactMe/>} />
         </Routes>
     </body>
