@@ -4,4 +4,10 @@
 
 html {
   background-color: #0F172A; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }

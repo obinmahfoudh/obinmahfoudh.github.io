@@ -16,9 +16,11 @@ export const HomePage = () => {
         <p className='mt-5 md:mt-10 font-extrabold text-xl md:text-4xl'>studying <span className='text-rose-500'> Artificial Intelligence </span> with a minor in Computational Mathematics</p>
         <p className='mt-5 md:mt-10 font-extrabold text-sm md:text-2xl'>This is my resume website where you can see what classes I've taken, my work experiences and a bit more about me</p>
       </div>
+      {/*}
       <div className= 'flex flex-col justify-between content-center pt-20 px-4 md:flex-row md:pt-40 md:px-10 text-base md:text-xl text-white '>
         {ReviewRatings()}
       </div>
+      */}
       <div className='flex flex-col items-center pt-20 px-4 md:px-10 text-white' >
           <h3 className='text-2xl font-extrabold mb-4'>Connect with me:</h3>
           <div className='flex justify-between w-40 md:w-60'>
