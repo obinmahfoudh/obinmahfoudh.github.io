@@ -4,10 +4,11 @@ export const Projects = [
         Name: "IPRO Chicago Lead Service Line Analysis",
         Description: `Led a team of five in a data-driven analysis of Chicago's lead service lines to support optimized replacement strategies. Conducted data cleaning,
         geocoding, and spatial analysis using Python and Geocoding APIs to prioritize replacements based on equity metrics and cost modeling and provide various 
-        visualizations using of Chicagos service lines.`,
+        visualizations of Chicagos service lines.`,
         Bullets: [
         "Conducted data-driven analysis of Chicago’s lead service lines to support optimized replacement strategies.",
         "Cleaned and geocoded service line data using Python (Pandas) and both Census and Google geocoding APIs.",
+        "Used geopandas to perform spatial joins and map service lines to census tracts and street centerlines.",
         "Built a FastAPI backend with cKDTree spatial indexing to return nearby service lines for Chicago residents.",
         "Analyzed equity metrics (e.g., Area Deprivation Index, child population) to prioritize underserved communities.",
         "Developed a cost model to estimate service line replacement timelines based on block-level factors.",
