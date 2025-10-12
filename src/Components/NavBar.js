@@ -17,9 +17,11 @@ export default function NavBar() {
       <li className='hover:text-sky-500 duration-500'>
         <Link to="/Classes">Classes</Link>
       </li>
+      {/*
       <li className='hover:text-sky-500 duration-500'>
         <Link to="/ContactMe">Contact Me</Link>
       </li>
+      */}
     </ul>
   </nav>
   );
