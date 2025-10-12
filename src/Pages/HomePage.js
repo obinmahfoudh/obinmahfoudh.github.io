@@ -10,7 +10,7 @@ export const HomePage = () => {
   document.title = 'Obaid'
   return (
     <>
-    <div className='flex flex-col md:w-1/2 h-screen pt-10 md:pt-20 mx-auto justify-between'>
+    <div className='flex flex-col md:w-1/2 min-h-screen pt-10 md:pt-20 mx-auto justify-between'>
       <div className='flex flex-col text-center justify-center text-white px-4 md:px-10 '>
         <h2 className='mt-20 md:mt-40 font-extrabold text-3xl md:text-6xl'>print("Hello world")</h2>
         <p className='mt-5 md:mt-10 font-extrabold text-xl md:text-4xl'>I'm Obaid, a student at the
@@ -27,17 +27,17 @@ export const HomePage = () => {
         {ReviewRatings()}
       </div>
       */}
-      <div className='flex flex-col items-center mb-28 md:mb-20 text-white' >
+      <div className='flex flex-col items-center mt-10 mb-28 md:mb-20 text-white' >
           <h3 className='text-2xl mb-10 font-extrabold'>Connect with me:</h3>
-          <div className='flex justify-between w-40 md:w-60'>
+          <div className='flex justify-between w-60 md:w-80'>
               <a href="https://www.linkedin.com/in/obaid-bin-mahfoudh/" target="_blank" rel="noreferrer">
-                  <img src={linkedin_logo} alt="Linkedin" className="w-10 h-10"/>
+                  <img src={linkedin_logo} alt="Linkedin" className="w-10 h-10 md:w-14 md:h-14"/>
               </a>
               <a href="https://github.com/obinmahfoudh" target="_blank" rel="noreferrer">
-                  <img src={github_logo}alt="GitHub" className="w-10 h-10"/>
+                  <img src={github_logo}alt="GitHub" className="w-10 h-10 md:w-14 md:h-14"/>
               </a>
               <a href="mailto:binmahfoudhobaid@gmail.com">
-                  <img src={email_logo} alt="Email" className="w-10 h-10"/>
+                  <img src={email_logo} alt="Email" className="w-10 h-10 md:w-14 md:h-14"/>
               </a>
           </div>
         </div>

@@ -17,12 +17,14 @@ export default ProjectsPage;
 const getProjects = () => {
         const projectList = Projects.map(project =>
             <div key={project.id} className="py-4 md:py-8">
-                <div className="flex flex-col text-center md:flex-row justify-between items-center md:items-start">
-                    <h3 className="text-xl md:text-3xl font-bold text-sky-500">{project.Name}</h3>
-                    <a href={project.Link} target="_blank" rel="noreferrer"> <img src={github_logo} alt="Linkedin" className="w-10 h-10"/></a>
+                <div className="flex flex-row justify-between">
+                    <h3 className="text-xl md:text-3xl font-bold text-sky-500 w-3/4 mb-5 md:mb-0">{project.Name}</h3>
+                    <a href={project.Link} target="_blank" rel="noreferrer" className='flex flex-col items-center text-sky-400 hover:text-blue-600'> <img src={github_logo} alt="Linkedin" className="w-10 h-10"/>
+                    <p className='max-sm:hidden'>View on github</p>
+                    </a>
                 </div>
-                <div className='pt-2 text-xl'>
-                    <p className="text-lg md:text-2xl font-normal text-white pt-2 md:w-3/4">{project.Description}</p>
+                <div className='text-xl'>
+                    <p className="text-lg md:text-2xl font-normal text-white md:w-3/4">{project.Description}</p>
                 </div>
                 <div className="px-4 pt-4">
                     <p className="w-full font-normal text-white">
