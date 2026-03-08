@@ -166,19 +166,6 @@ export const Courses = [
         Type: "Computer Science and Engineering"
       },
       {
-        id: 13,
-  
-        Name: "Machine Learning",
-    
-        Description: `Introduce fundamental problems in machine learning. Provide understanding of techniques, mathematical concepts,
-                      and algorithms used in machine learning. Provide understanding of the limitations of various machine learning
-                      algorithms and the way to evaluate performance of learning algorithms. Topics include introduction, regression,
-                      kernel methods, generative learning, discriminative learning, neural networks, support vector machines, graphical
-                      models, unsupervised learning, and dimensionality reduction.`,
-
-        Type: "Computer Science and Engineering"
-      },
-      {
         id: 14,
         Name: `Natural Language Processing`,
         Description: `An introduction to the problems of computing with human languages. Parsing.
@@ -264,13 +251,6 @@ export const Courses = [
 
       },
       {
-        id: 22,
-        Name: 'Numerical Linear Algebra',
-        Description: `Fundamentals of matrix theory; least squares problems; computer arithmetic, conditioning and 
-                      stability; direct and iterative methods for linear systems; nonlinear systems.`,
-        Type: 'Math'
-      },
-      {
         id: 23,
         Name: 'Mathematical Modeling',
         Description: `The course provides a systematic approach to modeling applications from areas such as physics
@@ -282,6 +262,15 @@ export const Courses = [
                       to assess the usefulness of the models. `,
 
         Type: 'Math'
+      },
+      {
+        id: 24,
+        Name: "Linear Optimization",
+        Description: ` Introduction to both theoretical and algorithmic
+                       aspects of linear optimization: geometry of linear programs, simplex method, anticycling,
+duality theory and dual simplex method, sensitivity analysis, large scale optimization via
+Dantzig-Wolfe decomposition and Benders decomposition, interior point methods,
+network flow problems, integer programming.`
       },
       {
         id: 24,
